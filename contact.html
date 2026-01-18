@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="accueil.html">
+                <i class="bi bi-code-slash"></i> Samar Jbili
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="accueil.html">
+                            <i class="bi bi-house-door"></i> Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parcours.html">
+                            <i class="bi bi-mortarboard"></i> Parcours
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competences.html">
+                            <i class="bi bi-gear"></i> Compétences
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experiences.html">
+                            <i class="bi bi-briefcase"></i> Expériences
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html">
+                            <i class="bi bi-calendar-event"></i> Evénements
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matieres.html">
+                            <i class="bi bi-book"></i> Matiéres
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="passions.html">
+                            <i class="bi bi-heart"></i> Passions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">
+                            <i class="bi bi-question-circle"></i> Quiz
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="temoignage.html">
+                            <i class="bi bi-chat-quote"></i> Témoignage
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="sec">
+            <h1><i class="bi bi-envelope-fill"></i> Contactez-moi</h1>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <article>
+                        <h2><i class="bi bi-info-circle"></i> Informations de contact</h2>
+                        
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-telephone-fill text-primary"></i> Téléphone
+                                </h5>
+                                <p class="card-text">
+                                    <a href="tel:+21624457156" class="text-decoration-none">+216 24 45 71 56</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-envelope-fill text-danger"></i> Email
+                                </h5>
+                                <p class="card-text">
+                                    <a href="mailto:samarjbili02@gmail.com" class="text-decoration-none">samarjbili02@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-geo-alt-fill text-success"></i> Localisation
+                                </h5>
+                                <p class="card-text">Sfax, Tunisie</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-share-fill text-info"></i> Réseaux sociaux
+                                </h5>
+                                <div class="d-flex gap-3">
+                                    <a href="https://linkedin.com/in/samar-jbili-b50817276" target="_blank" class="btn btn-outline-primary">
+                                        <i class="bi bi-linkedin"></i> LinkedIn
+                                    </a>
+                                    <a href="https://github.com/SamarJbili" target="_blank" class="btn btn-outline-dark">
+                                        <i class="bi bi-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info" role="alert">
+                            <i class="bi bi-clock-fill"></i> <strong>Disponibilité :</strong><br>
+                            Du lundi au vendredi, de 9h à 18h
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-6">
+                    <article>
+                        <h2><i class="bi bi-send"></i> Formulaire de contact</h2>
+                        
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">
+                                    <i class="bi bi-person"></i> Nom complet *
+                                </label>
+                                <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    <i class="bi bi-envelope"></i> Email *
+                                </label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="sujet" class="form-label">
+                                    <i class="bi bi-tag"></i> Sujet *
+                                </label>
+                                <select class="form-select" id="sujet" name="sujet" required>
+                                    <option value="">-- Sélectionnez un sujet --</option>
+                                    <option value="Opportunité de stage">Opportunité de stage</option>
+                                    <option value="Collaboration projet">Collaboration projet</option>
+                                    <option value="Demande d'information">Demande d'information</option>
+                                    <option value="Proposition d'emploi">Proposition d'emploi</option>
+                                    <option value="Question technique">Question technique</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">
+                                    <i class="bi bi-chat-text"></i> Message *
+                                </label>
+                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+                            </div>
+
+                            <div class="alert alert-warning" role="alert">
+                                <i class="bi bi-info-circle-fill"></i> Tous les champs marqués d'un astérisque (*) sont obligatoires.
+                            </div>
+
+                            <button type="submit" class="btn btn-custom btn-lg w-100">
+                                <i class="bi bi-send"></i> Envoyer le message
+                            </button>
+                        </form>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h2><i class="bi bi-map"></i> Localisation</h2>
+                    <div class="ratio ratio-16x9">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106484.80090261!2d10.632421!3d34.740208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13002c9377be45af%3A0x6a17b4d8e50b7f23!2sSfax%2C%20Tunisia!5e0!3m2!1sen!2sus!4v1234567890123" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

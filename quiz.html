@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="accueil.html">
+                <i class="bi bi-code-slash"></i> Samar Jbili
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="accueil.html">
+                            <i class="bi bi-house-door"></i> Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parcours.html">
+                            <i class="bi bi-mortarboard"></i> Parcours
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competences.html">
+                            <i class="bi bi-gear"></i> Compétences
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experiences.html">
+                            <i class="bi bi-briefcase"></i> Expériences
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html">
+                            <i class="bi bi-calendar-event"></i> Evénements
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matieres.html">
+                            <i class="bi bi-book"></i> Matiéres
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="passions.html">
+                            <i class="bi bi-heart"></i> Passions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">
+                            <i class="bi bi-question-circle"></i> Quiz
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="temoignage.html">
+                            <i class="bi bi-chat-quote"></i> Témoignage
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="sec">
+            <h1><i class="bi bi-question-circle-fill"></i> Quiz - Programmation Web</h1>
+            
+            <div class="alert alert-info" role="alert">
+                <i class="bi bi-info-circle-fill"></i> 
+                Testez vos connaissances en programmation web avec ce quiz de 15 questions. 
+                Bonne chance !
+            </div>
+
+            <form id="quiz-form">
+$                <article class="quiz-question">
+                    <p><strong>1. Quelle balise HTML est utilisée pour créer un lien hypertexte ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="a" id="q1a">
+                        <label class="form-check-label" for="q1a">&lt;link&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="b" id="q1b">
+                        <label class="form-check-label" for="q1b">&lt;a&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="c" id="q1c">
+                        <label class="form-check-label" for="q1c">&lt;href&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" value="d" id="q1d">
+                        <label class="form-check-label" for="q1d">&lt;url&gt;</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>2. En CSS, quelle propriété permet de changer la couleur du texte ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="a" id="q2a">
+                        <label class="form-check-label" for="q2a">text-color</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="b" id="q2b">
+                        <label class="form-check-label" for="q2b">font-color</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="c" id="q2c">
+                        <label class="form-check-label" for="q2c">color</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q2" value="d" id="q2d">
+                        <label class="form-check-label" for="q2d">text-style</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>3. Quelle méthode JavaScript permet de sélectionner un élément par son ID ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="a" id="q3a">
+                        <label class="form-check-label" for="q3a">getElementById()</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="b" id="q3b">
+                        <label class="form-check-label" for="q3b">querySelector()</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="c" id="q3c">
+                        <label class="form-check-label" for="q3c">getElementByClass()</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" value="d" id="q3d">
+                        <label class="form-check-label" for="q3d">selectId()</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>4. Quelle balise sémantique HTML5 représente l'en-tête d'une page ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="a" id="q4a">
+                        <label class="form-check-label" for="q4a">&lt;head&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="b" id="q4b">
+                        <label class="form-check-label" for="q4b">&lt;header&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="c" id="q4c">
+                        <label class="form-check-label" for="q4c">&lt;top&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" value="d" id="q4d">
+                        <label class="form-check-label" for="q4d">&lt;section&gt;</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>5. En CSS, comment applique-t-on un style à tous les éléments de classe "test" ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="a" id="q5a">
+                        <label class="form-check-label" for="q5a">#test { }</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="b" id="q5b">
+                        <label class="form-check-label" for="q5b">.test { }</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="c" id="q5c">
+                        <label class="form-check-label" for="q5c">test { }</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q5" value="d" id="q5d">
+                        <label class="form-check-label" for="q5d">*test { }</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>6. Quelle propriété CSS permet de créer un espace autour d'un élément ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="a" id="q6a">
+                        <label class="form-check-label" for="q6a">padding</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="b" id="q6b">
+                        <label class="form-check-label" for="q6b">margin</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="c" id="q6c">
+                        <label class="form-check-label" for="q6c">spacing</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" value="d" id="q6d">
+                        <label class="form-check-label" for="q6d">border</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>7. Quelle méthode permet d'afficher une boîte de dialogue en JavaScript ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="a" id="q7a">
+                        <label class="form-check-label" for="q7a">alert()</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="b" id="q7b">
+                        <label class="form-check-label" for="q7b">msg()</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="c" id="q7c">
+                        <label class="form-check-label" for="q7c">popup()</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q7" value="d" id="q7d">
+                        <label class="form-check-label" for="q7d">display()</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>8. Quelle balise permet de créer un tableau en HTML ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="a" id="q8a">
+                        <label class="form-check-label" for="q8a">&lt;table&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="b" id="q8b">
+                        <label class="form-check-label" for="q8b">&lt;tab&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="c" id="q8c">
+                        <label class="form-check-label" for="q8c">&lt;grid&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" value="d" id="q8d">
+                        <label class="form-check-label" for="q8d">&lt;data&gt;</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>9. En CSS Flexbox, quelle propriété aligne les éléments horizontalement ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" value="a" id="q9a">
+                        <label class="form-check-label" for="q9a">align-items</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" value="b" id="q9b">
+                        <label class="form-check-label" for="q9b">justify-content</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" value="c" id="q9c">
+                        <label class="form-check-label" for="q9c">flex-direction</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" value="d" id="q9d">
+                        <label class="form-check-label" for="q9d">align-content</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>10. Quelle est la syntaxe correcte pour déclarer une variable en JavaScript moderne ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" value="a" id="q10a">
+                        <label class="form-check-label" for="q10a">var x = 5;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" value="b" id="q10b">
+                        <label class="form-check-label" for="q10b">let x = 5;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" value="c" id="q10c">
+                        <label class="form-check-label" for="q10c">const x = 5;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q10" value="d" id="q10d">
+                        <label class="form-check-label" for="q10d">Toutes les réponses ci-dessus</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>11. Quelle balise sémantique HTML5 représente le pied de page ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q11" value="a" id="q11a">
+                        <label class="form-check-label" for="q11a">&lt;bottom&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q11" value="b" id="q11b">
+                        <label class="form-check-label" for="q11b">&lt;footer&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q11" value="c" id="q11c">
+                        <label class="form-check-label" for="q11c">&lt;foot&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q11" value="d" id="q11d">
+                        <label class="form-check-label" for="q11d">&lt;end&gt;</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>12. Comment inclure un fichier CSS externe dans une page HTML ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" value="a" id="q12a">
+                        <label class="form-check-label" for="q12a">&lt;style src="style.css"&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" value="b" id="q12b">
+                        <label class="form-check-label" for="q12b">&lt;link rel="stylesheet" href="style.css"&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" value="c" id="q12c">
+                        <label class="form-check-label" for="q12c">&lt;css href="style.css"&gt;</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" value="d" id="q12d">
+                        <label class="form-check-label" for="q12d">&lt;include css="style.css"&gt;</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>13. Quel événement JavaScript est déclenché lors du clic sur un bouton ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q13" value="a" id="q13a">
+                        <label class="form-check-label" for="q13a">onpress</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q13" value="b" id="q13b">
+                        <label class="form-check-label" for="q13b">onclick</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q13" value="c" id="q13c">
+                        <label class="form-check-label" for="q13c">onbutton</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q13" value="d" id="q13d">
+                        <label class="form-check-label" for="q13d">ontouch</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>14. En CSS Grid, quelle propriété définit le nombre de colonnes ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14" value="a" id="q14a">
+                        <label class="form-check-label" for="q14a">grid-columns</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14" value="b" id="q14b">
+                        <label class="form-check-label" for="q14b">grid-template-columns</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14" value="c" id="q14c">
+                        <label class="form-check-label" for="q14c">columns</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q14" value="d" id="q14d">
+                        <label class="form-check-label" for="q14d">template-columns</label>
+                    </div>
+                </article>
+
+                <article class="quiz-question">
+                    <p><strong>15. Quelle méthode permet d'ajouter un élément à la fin d'un tableau en JavaScript ?</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q15" value="a" id="q15a">
+                        <label class="form-check-label" for="q15a">append()</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q15" value="b" id="q15b">
+                        <label class="form-check-label" for="q15b">push()</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q15" value="c" id="q15c">
+                        <label class="form-check-label" for="q15c">add()</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q15" value="d" id="q15d">
+                        <label class="form-check-label" for="q15d">insert()</label>
+                    </div>
+                </article>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-custom btn-lg">
+                        <i class="bi bi-check-circle"></i> Valider le Quiz
+                    </button>
+                </div>
+            </form>
+
+            <div id="quiz-result"></div>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1"><i class="bi bi-c-circle"></i> 2025 Samar Jbili - Tous droits réservés</p>
+            <p class="text-muted">Site développé dans le cadre du projet de Programmation Web 1</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expériences</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .attestation-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+        }
+        
+        .attestation-label {
+            text-align: center;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .attestation-img {
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            background-color: #f8f9fa;
+        }
+        
+        .attestation-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+        
+        .modal-img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="accueil.html">
+                <i class="bi bi-code-slash"></i> Samar Jbili
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="accueil.html">
+                            <i class="bi bi-house-door"></i> Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parcours.html">
+                            <i class="bi bi-mortarboard"></i> Parcours
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competences.html">
+                            <i class="bi bi-gear"></i> Compétences
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experiences.html">
+                            <i class="bi bi-briefcase"></i> Expériences
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evenements.html">
+                            <i class="bi bi-calendar-event"></i> Evénements
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matieres.html">
+                            <i class="bi bi-book"></i> Matiéres
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="passions.html">
+                            <i class="bi bi-heart"></i> Passions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">
+                            <i class="bi bi-question-circle"></i> Quiz
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="temoignage.html">
+                            <i class="bi bi-chat-quote"></i> Témoignage
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+   <main class="container my-5">
+    <section class="sec">
+        <h1><i class="bi bi-briefcase-fill"></i> Expériences Professionnelles</h1>
+
+        <div class="row g-4 mt-4">
+            <div class="col-12">
+                <div class="card experience-card">
+                    <div class="card-line"></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h3 class="card-title">Stage de fin d'études - AI Talent Selector</h3>
+                                <p class="text-muted"><i class="bi bi-calendar3"></i> Février 2025 - Juin 2025</p>
+                                <p><strong><i class="bi bi-building"></i> Infotech Consulting Services</strong></p>
+
+                                <h5>Objectif du stage</h5>
+                                <p>
+                                    Développement d'un module d'intelligence artificielle pour la présélection automatisée des CV 
+                                    dans le module de recrutement Odoo.
+                                </p>
+
+                                <h5>Missions réalisées</h5>
+                                <ul>
+                                    <li><i class="bi bi-check-circle text-success"></i> Analyse des candidatures reçues</li>
+                                    <li><i class="bi bi-check-circle text-success"></i> Extraction automatique des données clés des CV</li>
+                                    <li><i class="bi bi-check-circle text-success"></i> Développement d'algorithmes de classement des profils</li>
+                                    <li><i class="bi bi-check-circle text-success"></i> Intégration du module dans Odoo</li>
+                                    <li><i class="bi bi-check-circle text-success"></i> Tests et validation du système</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 attestation-column">
+                                <div class="attestation-label">
+                                    <i class="bi bi-file-earmark-check"></i> Attestation de stage
+                                </div>
+                                <img src="images/Attestation_stagePFE.jpg" 
+                                     alt="Attestation Infotech" 
+                                     class="attestation-img"
+                                     loading="eager"
+                                     data-bs-toggle="modal" 
+                                     data-bs-target="#modal1"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card experience-card">
+                    <div class="card-line"></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h3 class="card-title">Stage de perfectionnement</h3>
+                                <p class="text-muted"><i class="bi bi-calendar3"></i> Janvier 2024 – Février 2024</p>
+                                <p><strong><i class="bi bi-building"></i> Association Djagora</strong></p>
+
+                                <h5>Description du projet</h5>
+                                <p>
+                                    Création d'une application de gestion des tâches (to-do list) en utilisant Angular et Django REST Framework.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 attestation-column">
+                                <div class="attestation-label">
+                                    <i class="bi bi-file-earmark-check"></i> Attestation de stage
+                                </div>
+                                <img src="images/Djagora.png" 
+                                     alt="Attestation Djagora" 
+                                     class="attestation-img"
+                                     loading="eager"
+                                     data-bs-toggle="modal" 
+                                     data-bs-target="#modal2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="card experience-card">
+                    <div class="card-line"></div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h3 class="card-title">Stage d'initiation</h3>
+                                <p class="text-muted"><i class="bi bi-calendar3"></i> Juillet 2023 – Août 2023</p>
+                                <p><strong><i class="bi bi-building"></i> Philadelphia Pharma</strong></p>
+
+                                <h5>Objectifs du stage</h5>
+                                <p>
+                                    Découverte du monde professionnel et initiation aux technologies de l'information.
+                                </p>
+                            </div>
+                            <div class="col-lg-4 attestation-column">
+                                <div class="attestation-label">
+                                    <i class="bi bi-file-earmark-check"></i> Attestation de stage
+                                </div>
+                                <img src="images/attestation_Stage1.jpg" 
+                                     alt="Attestation Philadelphia" 
+                                     class="attestation-img"
+                                     loading="eager"
+                                     data-bs-toggle="modal" 
+                                     data-bs-target="#modal3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="modal fade" id="modal1" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Attestation - Infotech Consulting Services</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/Attestation_stagePFE.jpg" class="modal-img" alt="Attestation Infotech">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Attestation - Association Djagora</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/Djagora.png" class="modal-img" alt="Attestation Djagora">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Attestation - Philadelphia Pharma</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/attestation_Stage1.jpg" class="modal-img" alt="Attestation Philadelphia">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
